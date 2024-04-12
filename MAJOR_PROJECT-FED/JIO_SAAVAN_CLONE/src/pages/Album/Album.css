@@ -1,0 +1,167 @@
+.ContAlbum
+{
+    width: 100vw;
+}
+.AlbumData
+{
+     display: flex;
+     column-gap: 2vw;
+     justify-content: center;
+     align-items: center;
+     margin-right: 1vw;
+     margin-left: 1vw;
+}
+.ContMainImgCont
+{
+    width: 35vh;
+    overflow: hidden;
+
+}
+.AlbumDataAndPlay
+{
+  width: 78vw;
+  display: flex;
+  flex-direction: column;
+ padding-left: 10px;
+  row-gap: 20px;
+}
+.AlbumDataName
+{
+   width: 100%;
+   font-size: xx-large;
+   font-weight: 500;
+}
+.AlbumDataSinger
+{
+    width: 100%;
+}
+
+
+@media screen and (max-width:750px)
+{
+    .ContAlbum
+    {
+        width: 100vw;
+    }
+    .AlbumData
+    {
+         display: flex;
+         flex-direction: column;
+         row-gap: 5vw;
+         justify-content: center;
+         align-items: center;
+         margin-right: 1vw;
+         margin-left: 1vw;
+    }
+    .ContMainImgCont
+    {
+        width: 100vw;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+    }
+    .ContMainImgCont img
+    {
+        width: 50%;
+    }
+    .AlbumDataAndPlay
+    {
+      width: 100vw;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+     padding-left: 10px;
+      row-gap: 20px;
+    }
+    .AlbumDataName
+    {
+       width: 100%;
+       font-size: xx-large;
+       font-weight: 500;
+       display: flex;
+       justify-content: center;
+    }
+    .AlbumDataSinger
+    {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+   
+}
+ 
+.AlbumSongs
+{
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  align-items: center;
+  margin-top: 5vh;
+}
+.AlbumSongCont
+{
+      display: flex;      
+      width: 80vw;
+      height: 10vh; 
+      justify-content: space-between;
+      align-items: center;
+      padding-left: 1vw;
+      padding-right:1vw ;
+}
+.indexOfSong
+{
+
+}
+.text-singers
+{
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+}
+.singer-album
+{
+ display: flex;
+ justify-content: space-between;
+ width: 60%;
+}
+
+
+@media screen and (max-width:940px)
+ {
+
+.AlbumSongCont
+{
+      display: flex;      
+      width: 90vw;
+      height: 10vh; 
+      justify-content: space-between;
+      align-items: center;
+      padding-left: 2vw;
+      padding-right:2vw ;
+}
+.indexOfSong
+{
+    font-size: small;
+}
+.text-singers
+{
+  display: flex;
+  width: 85%;
+  font-size: small;
+  align-items: center;
+}
+.singer-album
+{
+ display: flex;
+ justify-content: space-between;
+ flex-direction: column;
+ width: 70%;
+}
+
+}
+
+.indexOfSong:hover div
+{
+  display: flex;
+}

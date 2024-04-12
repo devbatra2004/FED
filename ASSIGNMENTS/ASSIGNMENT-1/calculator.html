@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+</head>
+<body>
+    <script>
+
+        const calculatorDiv = document.createElement("div");
+        calculatorDiv.id = "calculator";
+        
+        const displayInput = document.createElement("input");
+        displayInput.id = "display";
+        displayInput.setAttribute("readonly", true);
+        
+        const keysDiv = document.createElement("div");
+        keysDiv.id = "keys";
+        
+        const buttons = [
+          { label: "+", onclick: appendToDisplay, class: "operator-btn" },
+          { label: "7", onclick: appendToDisplay },
+          { label: "8", onclick: appendToDisplay },
+          { label: "9", onclick: appendToDisplay },
+          { label: "-", onclick: appendToDisplay, class: "operator-btn" },
+          { label: "4", onclick: appendToDisplay },
+          { label: "5", onclick: appendToDisplay },
+          { label: "6", onclick: appendToDisplay },
+          { label: "*", onclick: appendToDisplay, class: "operator-btn" },
+          { label: "1", onclick: appendToDisplay },
+          { label: "2", onclick: appendToDisplay },
+          { label: "3", onclick: appendToDisplay },
+          { label: "/", onclick: appendToDisplay, class: "operator-btn" },
+          { label: "0", onclick: appendToDisplay },
+          { label: ".", onclick: appendToDisplay },
+          { label: "=", onclick: calculate },
+          { label: "C", onclick: clearDisplay, class: "operator-btn" }
+        ];
+        
+        buttons.forEach(button => {
+          const buttonEl = document.createElement("button");
+          buttonEl.textContent = button.label;
+          if (button.class) {
+            buttonEl.classList.add(button.class);
+          }
+          buttonEl.onclick = () => button.onclick(button.label);
+          keysDiv.appendChild(buttonEl);
+        });
+        
+        document.body.appendChild(calculatorDiv);
+        calculatorDiv.appendChild(displayInput);
+        calculatorDiv.appendChild(keysDiv);
+        
+        calculatorDiv.style.fontFamily = "Arial, sans-serif";
+        calculatorDiv.style.backgroundColor = "hsl(0, 0%, 15%)";
+        calculatorDiv.style.borderRadius = "15px";
+        calculatorDiv.style.maxWidth = "500px";
+        calculatorDiv.style.overflow = "hidden";
+        calculatorDiv.style.position = "absolute";
+        calculatorDiv.style.top = "50%";
+        calculatorDiv.style.left = "50%";
+        calculatorDiv.style.transform = "translate(-50%, -50%)";
+        
+        displayInput.style.width = "100%";
+        displayInput.style.padding = "20px";
+        displayInput.style.fontSize = "5rem";
+        displayInput.style.textAlign = "left";
+        displayInput.style.border = "none";
+        displayInput.style.backgroundColor = "hsl(0, 0%, 20%)";
+        displayInput.style.color = "white";
+        
+        keysDiv.style.display = "grid";
+        keysDiv.style.gridTemplateColumns = "repeat(4, 1fr)";
+        keysDiv.style.gap = "10px";
+        keysDiv.style.padding = "25px";
+        
+        document.querySelectorAll("button").forEach(button => {
+          button.style.width = "100px";
+          button.style.height = "100px";
+          button.style.borderRadius = "50px";
+          button.style.border = "none";
+          button.style.backgroundColor = "hsl(0, 0%, 30%)";
+          button.style.color = "white";
+          button.style.fontSize = "3rem";
+          button.style.fontWeight = "bold";
+          button.style.cursor = "pointer";
+        });
+        
+        document.querySelectorAll("button:hover").forEach(button => {
+          button.style.backgroundColor = "hsl(0, 0%, 40%)";
+        });
+        
+        document.querySelectorAll("button:active").forEach(button => {
+          button.style.backgroundColor = "hsl(0, 0%, 50%)";
+        });
+        
+        document.querySelectorAll(".operator-btn").forEach(button => {
+          button.style.backgroundColor = "hsl(35, 100%, 55%)";
+        });
+        
+        document.querySelectorAll(".operator-btn:hover").forEach(button => {
+          button.style.backgroundColor = "hsl(35, 100%, 65%)";
+        });
+        
+        document.querySelectorAll(".operator-btn:active").forEach(button => {
+          button.style.backgroundColor = "hsl(35, 100%, 75%)";
+        });
+        
+        function appendToDisplay(input) {
+          displayInput.value += input;
+        }
+        
+        function clearDisplay() {
+          displayInput.value = "";
+        }
+        
+        function calculate() {
+          try {
+            displayInput.value = eval(displayInput.value);
+          } catch (error) {
+            displayInput.value = "Error";
+          }
+        }</script>
+</body>
+</html>

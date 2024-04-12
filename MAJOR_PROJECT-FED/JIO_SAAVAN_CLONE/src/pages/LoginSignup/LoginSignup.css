@@ -1,0 +1,120 @@
+.Arrahman{
+    background-color: rgb(49 92 134);
+}
+.justin
+{
+    background-color: #3a2619;
+}
+.shreya
+{
+    background-color: #643c6a;
+}
+.kishor
+{
+    background-color: #514e4d;
+}
+.diljit
+{
+    background-color: #8e2225;
+}
+.arijit
+{
+    background-color: #182032;
+}
+.badshah
+{
+    background-color: #d58135;
+}
+.text-translucent
+{
+    color: rgba(255, 255, 255, 0.413);
+}
+.ContLoginSignup
+{
+    
+}
+.ContLoginSignupImagesCont
+{
+    height: 100vh;
+    width: 50%;
+    position: relative;
+}
+.ContLoginSignupImages
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  row-gap: 5%;
+  top: -0%;
+   
+}
+.ContLoginSignupImages img
+{
+    width: 60%;
+    height: 60%;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+.ContLoginAndSignup
+{
+    
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.inp
+{
+   
+    background-color: rgb(255, 255, 255);
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+.inp::placeholder
+{
+    color: black;
+}
+.sub
+{
+    background-color: #2BC5B4;
+    color: white;
+    font-size: larger;
+    font-weight: 600;
+}
+.welcomeLS
+{
+    color: #3E3E3E;
+}
+@media screen and (max-width:841px)
+ {
+    .ContLoginSignupImagesCont
+    {
+        display: none;
+    }   
+    .ContLoginAndSignup
+{
+    background-color:#F6F6F6;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.inp
+{
+  width: 350px;
+}
+}
