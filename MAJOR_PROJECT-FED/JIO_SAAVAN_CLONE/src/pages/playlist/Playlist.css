@@ -1,0 +1,46 @@
+.playlist-container {
+    padding: 2rem;
+  }
+  
+  .playlist-header {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  .playlist-songs {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .playlist-song {
+    display: flex;
+    align-items: center;
+  }
+  
+  .song-index {
+    cursor: pointer;
+    margin-right: 1rem;
+  }
+  
+  .song-info {
+    flex: 1;
+  }
+  
+  .song-name {
+    font-weight: bold;
+  }
+  
+  .song-name.active {
+    color: #2BC5B4;
+  }
+  
+  .album-name, .singer-name {
+    color: #888;
+  }
+  
+  .remove-icon {
+    cursor: pointer;
+  }
+  

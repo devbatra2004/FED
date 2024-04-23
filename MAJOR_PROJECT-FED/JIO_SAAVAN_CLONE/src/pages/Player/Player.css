@@ -1,19 +1,18 @@
-input[type="range"]
-{
-   -webkit-appearance: none;    
+input[type="range"] {
+   -webkit-appearance: none;
    width: 100%;
    margin-bottom: 5.8px;
-   background-color: #e8e8e8ff;
+   background-color: #e8e8e8;
 }
-input[type="range"]::-webkit-slider-thumb
-{
-     appearance: none;
-     width: 10px;
-     height: 10px;
-     border-radius: 30px;
-     background-color: #46c7b6ff;
+
+input[type="range"]::-webkit-slider-thumb {
+   -webkit-appearance: none;
+   width: 10px;
+   height: 10px;
+   border-radius: 50%;
+   background-color: #46c7b6;
 }
-.sound:hover div
-{
+
+.sound:hover div {
    display: flex;
 }

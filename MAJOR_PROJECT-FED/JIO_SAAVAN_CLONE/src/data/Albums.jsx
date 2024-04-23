@@ -6,7 +6,7 @@ const Albums=[
     {
         id:1101,
         name:"Ashique 2",
-        img:"https://res.cloudinary.com/djfpux2na/image/upload/v1712394796/jiosawan/album/arijitsingh/jvtdjyqc5jxvca69cw6w.jpg",
+        img:"https://images.livemint.com/rf/Image-621x414/LiveMint/Period1/2013/04/27/Photos/ashique--621x414.jpg",
         singer:{
             id:1,
             name:"Arijit Singh"
